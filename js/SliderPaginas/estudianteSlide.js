@@ -1,3 +1,6 @@
+import {rol} from '../index.js'
+import {usuario} from '../index.js'
+import {apellido} from '../index.js'
 var slide =
     '<div class="sidebar active">' +
     '<div class="menu-btn">' +
@@ -5,11 +8,11 @@ var slide =
     '</div>' +
     '<div class="head">' +
     '<div class="user-img">' +
-    '<img src="../img/user.jpg" alt="">' +
+    '<img src="../../img/user.jpg" alt="">' +
     '</div>' +
     '<div class="user-details">' +
-    '<p class="title">Administrador</p>' +
-    '<p class="name">Paula Perez</p>' +
+    '<p class="title">'+rol+'</p>' +
+    '<p class="name">'+usuario+' '+apellido+'</p>' +
     '</div>' +
     '</div>' +
     '<div class="nav">' +
@@ -44,13 +47,7 @@ var slide =
     '<li >' +
     '<a href="#">' +
     '<i class="icon ph-bold ph-file-text"></i>' +
-    '<span class="text">Cursos</span>' +
-    '</a>' +
-    '</li>' +
-    '<li>' +
-    '<a href="registroUsuarios.html">' +
-    '<i class="icon ph-bold ph-calendar-blank"></i>' +
-    '<span class="text">Registro Usuarios</span>' +
+    '<span class="text">Foros</span>' +
     '</a>' +
     '</li>' +
     '</ul>' +
@@ -68,7 +65,7 @@ var slide =
     '<li class="hols">' +
     '<a href="#">' +
     '<i class="icon ph-bold ph-info"></i>' +
-    '<span class="text">Logout</span>' +
+    '<span id="salir" class="text">Cerrar Sesion</span>' +
     '</a>' +
     '</li>' +
     '</ul>' +
@@ -95,4 +92,17 @@ $(".menu > ul > li").click(function (e) {
 
 $(".menu-btn").click(function () {
     $(".sidebar").toggleClass("active");
+})
+
+$("#salir").click(function () {
+    Swal.fire({
+        title: "¿Seguro que quieres salir?",
+        showCancelButton: true,
+        confirmButtonText: "Cerrar Sesion"
+      }).then((result) => {
+        /* Read more about isConfirmed, isDenied below */
+        if (result.isConfirmed) {
+            window.location.href = "../../index.html";
+        }
+      });
 })
