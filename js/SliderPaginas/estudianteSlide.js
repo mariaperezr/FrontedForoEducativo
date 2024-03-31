@@ -45,7 +45,7 @@ var slide =
     '</ul>' +
     '</li>' +
     '<li >' +
-    '<a href="#">' +
+    '<a href="../../vista/foros/forosListar.html">' +
     '<i class="icon ph-bold ph-file-text"></i>' +
     '<span class="text">Foros</span>' +
     '</a>' +

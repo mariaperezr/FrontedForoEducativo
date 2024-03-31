@@ -38,7 +38,7 @@ $(document).ready(function () {
           return response.json();
         })
         .then(data => {
-          console.log(data)
+          
           // Manejar la respuesta del backend si es necesario
           localStorage.setItem('idUsuario', data.idUsuario);
           localStorage.setItem('documento', data.documento);
