@@ -1,9 +1,9 @@
-import {nombre} from './index.js'
-import {apellido} from './index.js'
-import {rol} from './index.js'
-import {documento} from './index.js'
-import {estado} from './index.js'
-import {email} from './index.js'
+import {nombre} from '../index.js'
+import {apellido} from '../index.js'
+import {rol} from '../index.js'
+import {documento} from '../index.js'
+import {estado} from '../index.js'
+import {email} from '../index.js'
 var perfil = 
 '<div class="card">'+
 '<div class="img">'+
