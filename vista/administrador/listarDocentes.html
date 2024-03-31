@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <!-- ICONS -->
   <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -14,6 +15,8 @@
   <!-- STYLESHEET -->
   <link rel="stylesheet" href="../../css/styleSlide.css" />
   <link rel="stylesheet" href="../../css/styleListarDocentes.css" />
+    <!-- <link rel="stylesheet" href="css/styleLogin.css" /> -->
+
 
 
   <title>Inicio</title>
@@ -27,8 +30,13 @@
       </div>
     </div>
     <div class="col col-9">
-      <div class="container">
-        <div class="card" style="--clr:#009688;">
+      <div class="input-group">
+        <input id="txtBuscarDocente" type="text" class="form-control" placeholder="Buscar Docente">
+        <button id="buscarDocente" class="btn" type="button">Buscar</button>
+        <button id="cancelarBusqueda" class="btn" type="button">Cancel</button>
+      </div>
+      <div id="containerCards" class="container">
+        <div class="card">
           <div class="imgBx">
             <img src="../../img/user.jpg" alt="">
           </div>
@@ -48,80 +56,6 @@
             <button class="btn btn-primary">Eliminar</button>
           </div>
         </div>
-        <div class="card" style="--clr:#03a9f4;">
-          <div class="imgBx">
-            <img src="../../img/user.jpg" alt="">
-
-          </div>
-          <div class="content">
-            <h4>Usuario 1 </h4>
-            <p>Este es el primer usuario reguistrado a y es un docente y esta de primeras </p>
-            <button class="btn btn-primary">Eliminar</button>
-          </div>
-        </div>
-        <div class="card" style="--clr:#009688;">
-          <div class="imgBx">
-            <img src="../../img/user.jpg" alt="">
-          </div>
-          <div class="content">
-            <h4>Usuario 1 </h4>
-            <p>Este es el primer usuario reguistrado a y es un docente y esta de primeras </p>
-            <button class="btn btn-primary">Eliminar</button>
-          </div>
-        </div>
-        <div class="card" style="--clr:#ff3e7f;">
-          <div class="imgBx">
-            <img src="../../img/user.jpg" alt="">
-          </div>
-          <div class="content">
-            <h4>Usuario 1 </h4>
-            <p>Este es el primer usuario reguistrado a y es un docente y esta de primeras </p>
-            <button class="btn btn-primary">Eliminar</button>
-          </div>
-        </div>
-        <div class="card" style="--clr:#03a9f4;">
-          <div class="imgBx">
-            <img src="../../img/user.jpg" alt="">
-
-          </div>
-          <div class="content">
-            <h4>Usuario 1 </h4>
-            <p>Este es el primer usuario reguistrado a y es un docente y esta de primeras </p>
-            <button class="btn btn-primary">Eliminar</button>
-          </div>
-        </div>
-
-        <div class="card" style="--clr:#009688;">
-          <div class="imgBx">
-            <img src="../../img/user.jpg" alt="">
-          </div>
-          <div class="content">
-            <h4>Usuario 1 </h4>
-            <p>Este es el primer usuario reguistrado a y es un docente y esta de primeras </p>
-            <button class="btn btn-primary">Eliminar</button>
-          </div>
-        </div>
-        <div class="card" style="--clr:#ff3e7f;">
-          <div class="imgBx">
-            <img src="../../img/user.jpg" alt="">
-          </div>
-          <div class="content">
-            <h4>Usuario 1 </h4>
-            <p>Este es el primer usuario reguistrado a y es un docente y esta de primeras </p>
-            <button class="btn btn-primary">Eliminar</button>
-          </div>
-        </div>
-        <div class="card" style="--clr:#03a9f4;">
-          <div class="imgBx">
-            <img src="../../img/user.jpg" alt="">
-
-          </div>
-          <div class="content">
-            <h4>Usuario 1 </h4>
-            <p>Este es el primer usuario reguistrado a y es un docente y esta de primeras </p>
-            <button class="btn">Eliminar Docente</button>
-          </div>
-        </div>
       </div>
 
     </div>
@@ -136,6 +70,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
+  <script src="../../js/administrador.js"></script>
 </body>
 
 </html>

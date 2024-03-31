@@ -1,7 +1,3 @@
-/* @import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900'); */
-
-/* @import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900); */
-/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Satisfy&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:wght@400;500;600;700;800&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Satisfy&display=swap');
 
 
@@ -12,6 +8,33 @@
     min-height: 100vh;
     background: linear-gradient(45deg, #00bcd4,#ffeb3b);
 }
+
+.input-group{
+    margin-top: 40px;
+}
+
+.input-group #buscarDocente{
+    background: none;
+    color: #6C63FC;
+    border-color: #6C63FC;
+}
+
+.input-group #cancelarBusqueda{
+    background: none;
+    color: #ADADAF;
+    border-color:#ADADAF ;
+}
+
+.input-group #buscarDocente:hover{
+    background: #6C63FC;
+    color: white;
+}
+
+.input-group #cancelarBusqueda:hover{
+    background: #ADADAF;
+    color: white;
+}
+
 
 .container {
     position: relative;
@@ -33,11 +56,12 @@
     background: #fff;
     border-radius: 20px;
     transition: 0.5s;
+    padding: -30px;
     /* box-shadow: 0 35px 80px rgba(0,0,0,0.15); */
 }
 
 .container .card:hover {
-    height: 300px;
+    height: 400px;
 }
 
 .container .card .imgBx{
@@ -66,11 +90,12 @@
     object-fit: cover;
 }
 
+
 .container .card .content{
     position: absolute;
     top: 180px;
     width: 100%;
-    padding: 0 30px;
+    padding: 0 25px;
     height: 30px;
     overflow: hidden;
     text-align: center;
@@ -79,7 +104,7 @@
 
 .container .card:hover .content{
     top: 80px;
-    height: 200px;
+    height: 280px;
 }
 
 .container .card .content h4{

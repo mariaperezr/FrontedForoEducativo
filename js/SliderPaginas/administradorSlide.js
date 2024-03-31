@@ -1,5 +1,5 @@
 import {rol} from '../index.js'
-import {usuario} from '../index.js'
+import {nombre} from '../index.js'
 import {apellido} from '../index.js'
 var slide =
     '<div class="sidebar active">' +
@@ -12,7 +12,7 @@ var slide =
     '</div>' +
     '<div class="user-details">' +
     '<p class="title">'+rol+'</p>' +
-    '<p class="name">'+usuario+' '+apellido+'</p>' +
+    '<p class="name">'+nombre+' '+apellido+'</p>' +
     '</div>' +
     '</div>' +
     '<div class="nav">' +
@@ -50,9 +50,9 @@ var slide =
     '<p class="title">Account</p>' +
     '<ul>' +
     '<li class="hols">' +
-    '<a href="#">' +
+    '<a href="../../vista/administrador/perfilAdministrador.html">' +
     '<i class="icon ph-bold ph-gear"></i>' +
-    '<span class="text">Ajustes</span>' +
+    '<span class="text">Perfil</span>' +
     '</a>' +
     '</li>' +
     '<li class="hols">' +
@@ -64,6 +64,10 @@ var slide =
     '</ul>' +
     '</div>' +
     '</div>' ;
+
+
+
+
 document.getElementById('containerSlide').innerHTML = slide;
 
 $(".menu > ul > li").click(function (e) {
