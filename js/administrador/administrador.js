@@ -1,6 +1,7 @@
 $(function () {
 
     listarDocentes()
+    
     //------------------------------------ FUNCION PARA LISTAR TODOS LOS DOCENTES -------------------------------
 
     function listarDocentes() {
@@ -43,6 +44,7 @@ $(function () {
             });
     }
 
+    // ------------------------------------ BUSCAR UN DOCENTE POR NOMBRE ---------------------------------------
     $("#buscarDocente").on("click", function () {
         var nombre = $('#txtBuscarDocente').val();
         if (nombre.trim() === '') {
@@ -101,9 +103,11 @@ $(function () {
         }
     })
 
+    // ------------------------------------ CANCELAR BUSQUEDA DE DOCENTE --------------------------------------
     $("#cancelarBusqueda").on('click', function(){
         listarDocentes();
         $("#txtBuscarDocente").val("");
         
     })
+
 })

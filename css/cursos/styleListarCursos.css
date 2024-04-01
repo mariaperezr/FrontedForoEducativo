@@ -1,27 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
 
-*{
-    font-family: 'Poppins', sans-serif;
-    margin:0; padding:0;
-    box-sizing: border-box;
-    outline: none; border:none;
-    text-decoration: none;
-    text-transform: capitalize;
-    transition: .2s linear;
+.containerButtom{
+    margin-bottom: 50px;
 }
 
-.container{
-    background:linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(232,104,47,1) 61%, rgba(0,212,255,1) 100%);
-    padding:15px 9%;
-    padding-bottom: 100px;
+.container .btnNuevoCurso{
+    background-color: white;
+    color: #7C74FC ;
+    border-color: #7C74FC;
+    position: absolute; 
+    right: 10px; 
+    padding: 5px; 
+}
+.container .btnNuevoCurso:hover{
+    background: #7C74FC;
+    color: white;
 }
 
 .container .heading{
     text-align: center;
     padding-bottom: 15px;
-    color:#fff;
-    text-shadow: 0 5px 10px rgba(0,0,0,.2);
-    font-size: 50px;
+    font-size: 45px;
 }
 
 .container .box-container{
@@ -57,11 +56,19 @@
 .container .box-container .box .btn{
     margin-top: 10px;
     display: inline-block;
-    background:#333;
-    color:#fff;
     font-size: 17px;
     border-radius: 5px;
     padding: 8px 25px;
+    text-decoration: none;
+    background-color: white;
+    color: #5349F9 ;
+    border-color: #5349F9;
+}
+
+.container .box-container .box .btn:hover{
+    background: #7C74FC;
+    color: white;
+    border-color: none;
 }
 
 .container .box-container .box .btn:hover{
