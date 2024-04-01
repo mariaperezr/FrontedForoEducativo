@@ -32,7 +32,7 @@ var slide =
     '</a>' +
     '</li>' +
     '<li >' +
-    '<a href="#">' +
+    '<a href="../../vista/administrador/cursosAdministrador.html">' +
     '<i class="icon ph-bold ph-file-text"></i>' +
     '<span class="text">Cursos</span>' +
     '</a>' +
