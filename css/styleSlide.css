@@ -15,7 +15,7 @@ iframe {
 }
 
 #containerSlide {
-
+    
     position: fixed;
     /* Establece la posición fija */
     width: 200px;
@@ -25,10 +25,6 @@ iframe {
     /* Color de fondo */
     margin: 0;
     padding: 0;
-}
-
-body {
-    background-color: #F6F6FF;
 }
 
 .container {
@@ -44,6 +40,7 @@ body {
     flex-direction: column;
     gap: 20px;
     background-color: #fff;
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
     padding: 24px;
     transition: all 0.3s;
     margin: 0;
