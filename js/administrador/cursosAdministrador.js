@@ -36,7 +36,7 @@ $(function () {
     $("#containerCursosAdmin").on("click", "#verEstudiantes", function() {
         var idCurso = $(this).attr("idCurso")
         localStorage.setItem('idCurso', idCurso); 
-        window.location.href = "../../vista/cursos/prueba.html";
+        window.location.href = "../../vista/cursos/listarAdminEstudiantesCurso.html";
     })
 
 })
