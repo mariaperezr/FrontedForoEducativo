@@ -12,6 +12,18 @@
     transition: .2s linear;
 }
 
+
+.btnForo{
+    margin-top: 10px;
+    display: inline-block;
+    background:purple;
+    color:purple;
+    font-size: 17px;
+    border-radius: 5px;
+    padding: 8px 25px;
+}
+
+
 .container {
     width: 100%;
     max-width: 600px;
@@ -73,15 +85,25 @@
     text-align: left;
 }
 
+.container .box-container .box {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+    border-radius: 5px;
+    background: #fff;
+    text-align: left; 
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
 .container .box-container .box .btn {
     display: inline-block;
-    background: #333;
+    background: purple;
     color: #fff;
     font-size: 17px;
     border-radius: 5px;
     padding: 8px 25px;
     text-decoration: none;
-    /*Eliminar subrayado del enlace*/
 }
 
 
