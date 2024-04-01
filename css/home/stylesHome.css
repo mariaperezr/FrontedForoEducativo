@@ -108,47 +108,51 @@
 }
 
 .container-carousel {
-    z-index: -1;
-    position: relative;
-    width: 100%;
-    max-width: 500px;
-    height: 300px;
-    background-color: #e0e0e0;
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.66);
-    border-radius: 15px;
-    overflow: hidden;
-    margin-left: -110px; 
-    margin-top: 350px;
+  z-index: -1;
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  background-color: #e0e0e0;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.66);
+  border-radius: 15px;
+  overflow: hidden;
+  margin-left: auto; 
+  margin-right  : auto; 
+  margin-top: 350px;
 }
 
 .carruseles {
-    width: 1000%;
-    height: 100%;
-    display: flex;
-    transition: transform 0.5s ease-in-out;
+  width: 1000%;
+  height: auto;
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  transition: transform 0.5s ease-in-out;
 }
 
 .slider-section {
-    width: calc(100% / 10);
-    height: 100%;
-    flex: 0 0 auto; 
+  width: calc(100% / 10);
+  height: 100%;
+  flex: 0 0 auto; 
+  scroll-snap-align: start;
 }
 
 .slider-section img {
-    width: 100%;
-    height: auto;
-    border-radius: 15px;
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
 }
 
 @media (min-width: 768px) {
-    .slider-section img {
-        object-fit: cover;
-    }
+  .slider-section img {
+      object-fit: cover;
+  }
 }
 
 @media screen and (max-width: 768px) {
-    .slider-section {
-        flex: 0 0 100%; 
-    }
+  .carruseles{
+    flex-wrap: nowrap;
+  }
 }
 
