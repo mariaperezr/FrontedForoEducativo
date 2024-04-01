@@ -40,6 +40,8 @@ $(function () {
                     fila += '<td>' + item.apellido + '</td>';
                     fila += '<td>' + item.email + '</td>';
                     fila += '<td>' + item.estado + '</td>';
+                    fila += '<td><button class="btn btn-editar"><i class="bi bi-pencil"></i></button></td>';
+                    fila += '<td><button class="btn btn-eliminar"><i class="bi bi-trash"></i></button></td>';
                     fila += '</tr>'; // Cerrar la fila de la tabla
                     fila += '</section>';
                     fila += '</main>';

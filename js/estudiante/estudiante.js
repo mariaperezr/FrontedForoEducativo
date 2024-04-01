@@ -72,3 +72,4 @@ const listUsers = async () => {
 window.addEventListener("load", async () => {
     await initDataTable();
 });
+

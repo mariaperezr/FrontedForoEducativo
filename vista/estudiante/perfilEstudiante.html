@@ -29,6 +29,52 @@
     </div>
   </div>
 
+  <!-------------------------------------  Modal ------------------------------- -->
+  <div class="modal fade" id="editarDatos" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Editar Datos</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="row">
+                      <div class="col">
+                        <h6>Nombre:</h6>
+                        <input type="text" id="txtEdNombre" class="form-control" placeholder="Enter email" name="email">
+                      </div>
+                      <div class="col">
+                        <h6>Apellido:</h6>
+                        <input type="text" id="txtEdApellido" class="form-control" placeholder="Enter password" name="pswd">
+                      </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                          <h6>Contraseña:</h6>
+                          <input type="password" id="txtEdPassword" class="form-control" name="email">
+                        </div>
+                        <div class="col">
+                          <h6>Email:</h6>
+                          <input type="text" id="txtEdEmail" class="form-control" placeholder="Enter password" name="pswd">
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col">
+                          <h6>Documento:</h6>
+                          <input type="text" id="txtEdDocumento" class="form-control" placeholder="Enter email" name="email">
+                        </div>
+                      </div>
+                  </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button id="guardarCambios" type="button" class="btn btn-primary">Guardar Cambios</button>
+            </div>
+        </div>
+    </div>
+</div>
+
   <!-- Jquery -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.js"
     integrity="sha512-8Z5++K1rB3U+USaLKG6oO8uWWBhdYsM3hmdirnOEWp8h2B1aOikj5zBzlXs8QOrvY9OxEnD2QDkbSKKpfqcIWw=="

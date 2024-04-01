@@ -25,25 +25,6 @@ var slide =
     '<span class="text">Inicio</span>' +
     '</a>' +
     '</li>' +
-    '<li>' +
-    '<a href="#">' +
-    '<i class="icon ph-bold ph-user"></i>' +
-    '<span class="text">Docentes</span>' +
-    '<i class="arrow ph-bold ph-caret-down"></i>' +
-    '</a>' +
-    '<ul class="sub-menu">' +
-    '<li>' +
-    '<a href="#">' +
-    '<span class="text">Users</span>' +
-    '</a>' +
-    '</li>' +
-    '<li>' +
-    '<a href="#">' +
-    '<span class="text">Suscribirse</span>' +
-    '</a>' +
-    '</li>' +
-    '</ul>' +
-    '</li>' +
     '<li >' +
     '<a href="../../vista/foros/forosListarEstudiante.html">' +
     '<i class="icon ph-bold ph-file-text"></i>' +
